@@ -10,19 +10,20 @@
 * 使用DllReferencePlugin将第三方资源分离打包，提高打包速度
 
 
-npm install
 安装 vue-cli
 ```
 npm install -g vue-cli
 ```
-npm run dev
-```
 
+```
+npm install
+```
 
 启动开发环境
 ```
 npm run dev
 ```
+
 
 打包到生产环境
 ```
@@ -41,12 +42,13 @@ npm run buildppe
 将第三方资源分离打包，提高打包速度
 ```
  npm run build:dll
+```
 
 
-###最后
 
 ***
 * config中配合本地代理，处理跨域
 *  package.json为项目拷贝文件，可忽略
+***
 
 
