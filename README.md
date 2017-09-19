@@ -41,7 +41,7 @@ npm run buildppe
 ```
 
 
-打包到预生产环境
+打包到测试产环境
 ```
  npm run buildtest
 ```
