@@ -15,9 +15,12 @@
 npm install -g vue-cli
 ```
 
+安装
 ```
 npm install
 ```
+
+
 
 启动开发环境
 ```
@@ -25,20 +28,26 @@ npm run dev
 ```
 
 
+
 打包到生产环境
 ```
 npm run build
 ```
+
 
 打包到预生产环境
 ```
 npm run buildppe
 ```
 
+
 打包到预生产环境
 ```
  npm run buildtest
 ```
+
+
+
 将第三方资源分离打包，提高打包速度
 ```
  npm run build:dll
