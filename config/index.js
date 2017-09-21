@@ -61,7 +61,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/baseUrl': { /* 当发生跨域请求是调用此接口 本地代理*/
-        target: 'http://this is xxx address',
+        target: 'https://api.douban.com/v2/event/list?loc=108288&start=1&count=3',
         changeOrigin: true,
         pathRewrite: {
           '^/baseUrl': ''

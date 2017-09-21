@@ -1,6 +1,6 @@
 module.exports = {
   NODE_ENV: '"ddd"',
-  baseUrl: '"http://this is test address"',
+  baseUrl: '"https://api.douban.com/v2/event/list?loc=108288&start=1&count=3"',
   /* 福币商品skuID */
   rechargeList: `[{
     skuid: "020d73154fea407aba111e8a0b010cb1",

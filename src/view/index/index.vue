@@ -2,7 +2,8 @@
   <div v-title='"mo"' class="mo">
     <h1>{{address}}</h1>
     <p>{{text}}</p>
-
+    <span>开发环境下，本地代理，用get请求跨域接口，成功返回</span>
+    <p>{{data}}</p>
   </div>
 </template>
 
@@ -11,7 +12,8 @@ export default {
   data () {
     return {
       address: '',
-      text: ''
+      text: '',
+      data: ''
     }
   },
   mounted () {
@@ -25,7 +27,7 @@ export default {
   methods: {
 
     get () { // 开发环境跨域时调用本地代理 具体查看 config-->index.js
-      this.$http.post(process.env.baseUrl + 'xxxxxx')
+      this.$http.post(process.env.baseUrl)
         .then(res => {
           console.log(res)
           this.data = res
