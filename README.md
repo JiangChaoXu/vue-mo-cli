@@ -53,8 +53,10 @@ npm run buildppe
  npm run build:dll
 ```
 
+```
+*新增demo，vue九宫格抽奖
 
-
+```
 ***
 * config中配合本地代理，处理跨域
 *  package.json为项目拷贝文件，可忽略

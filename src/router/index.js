@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import {
+  lottery,
+  lotteryRecord
+} from './router_lottery'
 Vue.use(Router)
 const router = new Router({
   mode: 'hash',
@@ -20,7 +24,9 @@ const router = new Router({
         resolve(require('../view/index/index.vue'))
       })
     }
-  }
+  },
+    /* 抽奖 */
+  lottery, lotteryRecord
   ]
 })
 

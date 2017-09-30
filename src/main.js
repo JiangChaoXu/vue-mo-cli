@@ -3,9 +3,11 @@ import App from './App.vue'
 import router from './router'
 import resource from 'vue-resource'
 import Navigation from 'vue-navigation'
+import '../node_modules/mint-ui/lib/style.min.css' // mint-ui
+import * as filters from './assets/js/filters'
 import './assets/js/browser.js'
 import './assets/js/rem'
-
+import './assets/less/public.less'
 Vue.use(resource)
 Vue.use(Navigation, {
   router
@@ -40,6 +42,10 @@ if (!/ipad|iphone/i.test(navigator.userAgent)) {
   })()
 }
 
+// 过滤器
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, filters[key])
+})
 // 自定义指令页面title实时更新
 Vue.directive('title', {
 
